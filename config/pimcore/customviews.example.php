@@ -5,15 +5,14 @@ return [
         [
             'treetype' => 'object',                                             // element type is "object"
             'name' => 'Articles',                                               // display name
-            'condition' => null,                                                // SQL condition
             'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/reading.svg',      // tree icon
             'id' => 1,                                                          // unique (!!!) custom view ID
             'rootfolder' => '/blog',                                            // root node
-            'showroot' => false,                                                // show root node or just children?
-            'classes' => [                                                      // allowed classes to add; use class ids; Options: a)comma-separated b) Array [id => (Depth)] 
-                "5" => 1,                                                       // (int) Depth = Sets the limit on how many levels deep (Depth) in the object tree you can add the class       
-                "SUBARTICLE" => 3,                                      
-            ],                                                    
+            'showroot' => false,                                                // show root node or just children? Note: Depending on your configuration and the amout of your child nodes you need to set this true for pagination to work.
+                'classes' => [                                                     // allowed classes to add; use class ids; Options: a)comma-separated b) Array [id => (Depth)]
+                "5" => 1,                                                       // (int) Depth = Sets the limit on how many levels deep (Depth) in the object tree you can add the class
+                "SUBARTICLE" => 3,
+            ],
             'position' => 'right',                                              // left or right accordion
             'sort' => '1',                                                      // sort priority. lower values are shown first (prio for standard trees is -3 docs,-2 assets,-1 objects)
             'expanded' => true,                                                 // tree is expanded by default (there can be only one expanded tree on each side)
@@ -26,7 +25,7 @@ return [
                     'columns' => ['o5' => 'title']
                 ]
             ],
-            'where' => '',
+            'where' => '',                                                      // SQL where condition
             'treeContextMenu' => [
                 'object' => [
                     'items' => [
@@ -45,7 +44,8 @@ return [
                         'unlock' => 0,                                          // hide "Unlock"
                         'lockAndPropagate' => 0,                                // hide "Lock and Propagate"
                         'unlockAndPropagete' => 0,                              // hide "Unlock and Propagate"
-                        'reload' => 0                                           // hide reload
+                        'reload' => 0,                                          // hide reload
+                        'changeChildrenSortBy' => 0                             // hide "Sort Children By"
                     ]
                 ]
             ]

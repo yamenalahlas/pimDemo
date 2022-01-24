@@ -1,4 +1,4 @@
-version: '2.4'
+version: "2.4"
 services:
     redis:
         image: redis:alpine
@@ -6,7 +6,15 @@ services:
     db:
         image: mariadb:10.5
         working_dir: /application
-        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-format=Barracuda, --innodb-large-prefix=1, --innodb-file-per-table=1]
+        command:
+            [
+                mysqld,
+                --character-set-server=utf8mb4,
+                --collation-server=utf8mb4_unicode_ci,
+                --innodb-file-format=Barracuda,
+                --innodb-large-prefix=1,
+                --innodb-file-per-table=1,
+            ]
         volumes:
             - pimcore-demo-database:/var/lib/mysql
         environment:
@@ -28,7 +36,7 @@ services:
 
     php-fpm:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.0-fpm
+        image: pimcore/pimcore:PHP8.1-fpm
         environment:
             COMPOSER_HOME: /var/www/html
         depends_on:
@@ -39,7 +47,7 @@ services:
 
     php-fpm-debug:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.0-fpm-debug
+        image: pimcore/pimcore:PHP8.1-fpm-debug
         environment:
             PHP_IDE_CONFIG: "serverName=localhost"
             COMPOSER_HOME: /var/www/html
@@ -51,13 +59,12 @@ services:
 
     supervisord:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.0-supervisord
+        image: pimcore/pimcore:PHP8.1-supervisord
         depends_on:
             - db
         volumes:
             - .:/var/www/html:cached
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
-
 
 volumes:
     pimcore-demo-database:

@@ -1,12 +1,11 @@
-# Demo and Blue Print Application for Pimcore
+# Pimcore Project Skeleton 
 
-This demo package is intended to be used by Pimcore newcomers who want to learn Pimcore and see it in action. 
-It's tailored get an overview of Pimcores CMS, DAM, PIM and E-Commerce functionality and can be used as a blue print for 
-E-Commerce Applications built with Pimcore. If you are an experienced Pimcore developer, have a look at the Skeleton linked below instead.
+This skeleton should be used by experienced Pimcore developers for starting a new project from the ground up. 
+If you are new to Pimcore, it's better to start with our demo package, listed below 😉
 
-## Getting started 
+## Getting started
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/demo my-project
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
 cd ./my-project
 ./vendor/bin/pimcore-install
 ```
@@ -15,37 +14,20 @@ cd ./my-project
 - Open https://your-host/admin in your browser
 - Done! 😎
 
-
 ## Docker
 
-You can also use Docker to setup a new Pimcore Installation.
-You don't need to have a PHP environment with composer installed.
+You can also use Docker to setup a new Pimcore Installation:
 
-### Prerequisits
+```bash
+docker run --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.0-fpm composer create-project pimcore/skeleton my-project
+cd ./my-project
+docker-compose up -d
+docker-compose exec php-fpm vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore
+docker-compose exec php-fpm chown -R www-data:www-data var
 
-* Your user must be allowed to run docker commands (directly or via sudo).
-* You must have docker-compose installed.
-* Your user must be allowed to change file permissions (directly or via sudo).
-
-### Follow these steps
-
-1. Initialize the demo project using the `pimcore/pimcore` image
-    ``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.0-fpm composer create-project pimcore/demo my-project``
-1. Go to your new project
-    `cd my-project/`
-1. Part of the new project is a docker compose file
-    * Run `` echo `id -u`:`id -g` `` to retrieve your local user and group id
-    * Open the `docker-compose.yml` file in an editor, uncomment all the `user: '1000:1000'` lines and update the ids if necessary
-    * Start the needed services with `docker-compose up -d`
-1. Install pimcore and initialize the DB
-    `docker-compose exec php-fpm vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore`
-    * When asked for admin user and password: Choose freely
-    * This can take a while, up to 20 minutes
-1. :heavy_check_mark: DONE - You can now visit your pimcore-demo:
-    * The frontend: <http://localhost>
-    * The admin interface, using the credentials you have chosen above:
-      <http://localhost/admin>
-
+```
+You can now navigate your browser to https://localhost or https://localhost/admin.
+The default docker-compose comes with PHP 8.0 on debian and mariadb 10.5.
 
 ## Other demo/skeleton packages
-- [Pimcore Skeleton](https://github.com/pimcore/skeleton/)
+- [Pimcore Basic Demo](https://github.com/pimcore/demo)

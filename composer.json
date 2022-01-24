@@ -1,31 +1,22 @@
 {
-  "name": "pimcore/demo",
+  "name": "pimcore/skeleton",
   "type": "project",
-  "description": "Demo Application for Pimcore 6",
   "license": "GPL-3.0-or-later",
   "config": {
     "optimize-autoloader": true,
     "sort-packages": true,
-    "discard-changes": true,
     "process-timeout": 0
   },
-  "prefer-stable": true,
-  "minimum-stability": "dev",
   "require": {
-    "hwi/oauth-bundle": "^1.2.0",
-    "php-http/guzzle7-adapter": "^0.1.1",
-    "php-http/httplug-bundle": "^1",
-    "pimcore/customer-management-framework-bundle": "^3.0",
-    "pimcore/pimcore": "^10.0",
-    "pimcore/web2print-tools-bundle": "^4.0",
-    "pimcore/data-hub": "^1.0",
-    "pimcore/payment-provider-unzer": "^1.0"
+    "pimcore/pimcore": "^10.0"
   },
-  "conflict": {
-    "hwi/oauth-bundle": "1.4.0"
+  "require-dev": {
+    "cache/integration-tests": "^0.17.0",
+    "codeception/codeception": "^4.1.12",
+    "codeception/module-symfony": "^1"
   },
   "suggest": {
-    "elasticsearch/elasticsearch": "Required for Elastic Search service"
+    "pimcore/data-hub": "Universal data interface for GraphQL, CSV and other formats"
   },
   "autoload": {
     "psr-4": {
@@ -49,14 +40,5 @@
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
     ]
-  },
-  "repositories": {
-    "dev": {
-      "type": "path",
-      "url": "./dev/*/*",
-      "options": {
-        "symlink": true
-      }
-    }
   }
 }
