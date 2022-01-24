@@ -29,22 +29,25 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'FilterDefinition',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1617805460,
+   'modificationDate' => 1643025745,
    'userOwner' => 0,
    'userModification' => 1,
-   'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractFilterDefinition',
+   'parentClass' => '',
    'implementsInterfaces' => '',
    'listingParentClass' => '',
    'useTraits' => '',
    'listingUseTraits' => '',
    'encryption' => false,
-   'encryptedTables' =>
+   'encryptedTables' => 
   array (
   ),
    'allowInherit' => true,
-   'allowVariants' => NULL,
+   'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'fieldDefinitions' => 
+  array (
+  ),
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'layout' => NULL,
@@ -60,9 +63,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
          'fieldtype' => 'tabpanel',
          'border' => false,
@@ -78,9 +81,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => '',
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'layout' => '',
@@ -96,9 +99,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => 'Filter Definitions configure appearance and behavior of product lists in the frontend. Not all options are considered in the frontend by default. The frontend implementation might need take care of them explicitly.&nbsp;',
@@ -116,15 +119,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'name' => 'Default Product List Options',
@@ -138,9 +141,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                      'fieldtype' => 'text',
                      'html' => '<font size="2">These options are considered by default with the ecommerce framework when setting up the product list.&nbsp;</font>',
@@ -158,15 +161,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                      'datatype' => 'layout',
                      'permissions' => NULL,
-                     'childs' =>
+                     'childs' => 
                     array (
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' =>
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'fieldtype' => 'numeric',
                      'width' => 300,
@@ -192,22 +195,70 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                      'defaultValueGenerator' => '',
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                      'fieldtype' => 'select',
-                     'options' =>
+                     'options' => 
                     array (
-                      0 =>
+                      0 => 
                       array (
                         'key' => 'Yes',
                         'value' => 'true',
                       ),
-                      1 =>
+                      1 => 
                       array (
                         'key' => 'No',
                         'value' => 'false',
@@ -233,15 +284,63 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                      'defaultValueGenerator' => '',
                   )),
-                  3 =>
+                  3 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                      'fieldtype' => 'fieldcollections',
-                     'allowedTypes' =>
+                     'allowedTypes' => 
                     array (
                       0 => 'OrderByFields',
                     ),
@@ -266,19 +365,67 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
                  'labelWidth' => 100,
                  'labelAlign' => 'left',
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'name' => 'Order By Options',
@@ -292,9 +439,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                      'fieldtype' => 'text',
                      'html' => 'Set possible order by options for frontend. This needs to be implemented in the frontend too.&nbsp;',
@@ -312,15 +459,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                      'datatype' => 'layout',
                      'permissions' => NULL,
-                     'childs' =>
+                     'childs' => 
                     array (
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' =>
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelectionField::__set_state(array(
                      'fieldtype' => 'indexFieldSelectionField',
                      'specificPriceField' => false,
@@ -345,11 +492,59 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelectionField::__set_state(array(
                      'fieldtype' => 'indexFieldSelectionField',
                      'specificPriceField' => false,
@@ -374,19 +569,67 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
                  'labelWidth' => 100,
                  'labelAlign' => 'left',
               )),
-              3 =>
+              3 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'name' => 'Additional Options',
@@ -400,9 +643,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                      'fieldtype' => 'text',
                      'html' => 'Place where optional additional settings can go.&nbsp;<div>These settings need to be taken care about by the implementation. They are not considered by the framework by default.&nbsp;</div>',
@@ -420,15 +663,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                      'datatype' => 'layout',
                      'permissions' => NULL,
-                     'childs' =>
+                     'childs' => 
                     array (
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' =>
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                      'fieldtype' => 'checkbox',
                      'defaultValue' => 0,
@@ -446,12 +689,60 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                      'defaultValueGenerator' => '',
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                      'fieldtype' => 'checkbox',
                      'defaultValue' => 0,
@@ -469,12 +760,60 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                      'defaultValueGenerator' => '',
                   )),
-                  3 =>
+                  3 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'fieldtype' => 'numeric',
                      'width' => 300,
@@ -500,14 +839,62 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                      'defaultValueGenerator' => '',
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
                  'labelWidth' => 100,
@@ -515,14 +902,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' =>
+             'blockedVarsForExport' => 
             array (
             ),
              'icon' => NULL,
              'labelWidth' => 100,
              'labelAlign' => 'left',
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'layout' => '',
@@ -538,9 +925,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => 'Preconditions are applied to the product list without being shown at the filters list in the frontend. Therefore preconditions cannot be changed by the user in the frontend.<div>In order to filter for specific value use the pre select attribute in the entries.&nbsp;</div>',
@@ -558,25 +945,25 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                  'fieldtype' => 'select',
-                 'options' =>
+                 'options' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'key' => 'Yes',
                     'value' => 'true',
                   ),
-                  1 =>
+                  1 => 
                   array (
                     'key' => 'No',
                     'value' => 'false',
@@ -602,15 +989,63 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' =>
+                 'forbiddenNames' => 
+                array (
+                  0 => 'id',
+                  1 => 'key',
+                  2 => 'path',
+                  3 => 'type',
+                  4 => 'index',
+                  5 => 'classname',
+                  6 => 'creationdate',
+                  7 => 'userowner',
+                  8 => 'value',
+                  9 => 'class',
+                  10 => 'list',
+                  11 => 'fullpath',
+                  12 => 'childs',
+                  13 => 'values',
+                  14 => 'cachetag',
+                  15 => 'cachetags',
+                  16 => 'parent',
+                  17 => 'published',
+                  18 => 'valuefromparent',
+                  19 => 'userpermissions',
+                  20 => 'dependencies',
+                  21 => 'modificationdate',
+                  22 => 'usermodification',
+                  23 => 'byid',
+                  24 => 'bypath',
+                  25 => 'data',
+                  26 => 'versions',
+                  27 => 'properties',
+                  28 => 'permissions',
+                  29 => 'permissionsforuser',
+                  30 => 'childamount',
+                  31 => 'apipluginbroker',
+                  32 => 'resource',
+                  33 => 'parentClass',
+                  34 => 'definition',
+                  35 => 'locked',
+                  36 => 'language',
+                  37 => 'omitmandatorycheck',
+                  38 => 'idpath',
+                  39 => 'object',
+                  40 => 'fieldname',
+                  41 => 'property',
+                  42 => 'parentid',
+                  43 => 'children',
+                  44 => 'scheduledtasks',
+                ),
+                 'blockedVarsForExport' => 
                 array (
                 ),
                  'defaultValueGenerator' => '',
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                  'fieldtype' => 'fieldcollections',
-                 'allowedTypes' =>
+                 'allowedTypes' => 
                 array (
                   0 => 'FilterSelectFromMultiSelect',
                   1 => 'FilterCategoryMultiselect',
@@ -644,20 +1079,68 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' =>
+                 'forbiddenNames' => 
+                array (
+                  0 => 'id',
+                  1 => 'key',
+                  2 => 'path',
+                  3 => 'type',
+                  4 => 'index',
+                  5 => 'classname',
+                  6 => 'creationdate',
+                  7 => 'userowner',
+                  8 => 'value',
+                  9 => 'class',
+                  10 => 'list',
+                  11 => 'fullpath',
+                  12 => 'childs',
+                  13 => 'values',
+                  14 => 'cachetag',
+                  15 => 'cachetags',
+                  16 => 'parent',
+                  17 => 'published',
+                  18 => 'valuefromparent',
+                  19 => 'userpermissions',
+                  20 => 'dependencies',
+                  21 => 'modificationdate',
+                  22 => 'usermodification',
+                  23 => 'byid',
+                  24 => 'bypath',
+                  25 => 'data',
+                  26 => 'versions',
+                  27 => 'properties',
+                  28 => 'permissions',
+                  29 => 'permissionsforuser',
+                  30 => 'childamount',
+                  31 => 'apipluginbroker',
+                  32 => 'resource',
+                  33 => 'parentClass',
+                  34 => 'definition',
+                  35 => 'locked',
+                  36 => 'language',
+                  37 => 'omitmandatorycheck',
+                  38 => 'idpath',
+                  39 => 'object',
+                  40 => 'fieldname',
+                  41 => 'property',
+                  42 => 'parentid',
+                  43 => 'children',
+                  44 => 'scheduledtasks',
+                ),
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' =>
+             'blockedVarsForExport' => 
             array (
             ),
              'icon' => NULL,
              'labelWidth' => 100,
              'labelAlign' => 'left',
           )),
-          2 =>
+          2 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'layout' => '',
@@ -673,9 +1156,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => 'Filters are - if implemented in the frontend - visible to the user and apply filters to the product list.&nbsp;',
@@ -693,25 +1176,25 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                  'fieldtype' => 'select',
-                 'options' =>
+                 'options' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'key' => 'Yes',
                     'value' => 'true',
                   ),
-                  1 =>
+                  1 => 
                   array (
                     'key' => 'No',
                     'value' => 'false',
@@ -737,15 +1220,63 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' =>
+                 'forbiddenNames' => 
+                array (
+                  0 => 'id',
+                  1 => 'key',
+                  2 => 'path',
+                  3 => 'type',
+                  4 => 'index',
+                  5 => 'classname',
+                  6 => 'creationdate',
+                  7 => 'userowner',
+                  8 => 'value',
+                  9 => 'class',
+                  10 => 'list',
+                  11 => 'fullpath',
+                  12 => 'childs',
+                  13 => 'values',
+                  14 => 'cachetag',
+                  15 => 'cachetags',
+                  16 => 'parent',
+                  17 => 'published',
+                  18 => 'valuefromparent',
+                  19 => 'userpermissions',
+                  20 => 'dependencies',
+                  21 => 'modificationdate',
+                  22 => 'usermodification',
+                  23 => 'byid',
+                  24 => 'bypath',
+                  25 => 'data',
+                  26 => 'versions',
+                  27 => 'properties',
+                  28 => 'permissions',
+                  29 => 'permissionsforuser',
+                  30 => 'childamount',
+                  31 => 'apipluginbroker',
+                  32 => 'resource',
+                  33 => 'parentClass',
+                  34 => 'definition',
+                  35 => 'locked',
+                  36 => 'language',
+                  37 => 'omitmandatorycheck',
+                  38 => 'idpath',
+                  39 => 'object',
+                  40 => 'fieldname',
+                  41 => 'property',
+                  42 => 'parentid',
+                  43 => 'children',
+                  44 => 'scheduledtasks',
+                ),
+                 'blockedVarsForExport' => 
                 array (
                 ),
                  'defaultValueGenerator' => '',
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                  'fieldtype' => 'fieldcollections',
-                 'allowedTypes' =>
+                 'allowedTypes' => 
                 array (
                   0 => 'FilterCategory',
                   1 => 'FilterMultiRelation',
@@ -779,20 +1310,68 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' =>
+                 'forbiddenNames' => 
+                array (
+                  0 => 'id',
+                  1 => 'key',
+                  2 => 'path',
+                  3 => 'type',
+                  4 => 'index',
+                  5 => 'classname',
+                  6 => 'creationdate',
+                  7 => 'userowner',
+                  8 => 'value',
+                  9 => 'class',
+                  10 => 'list',
+                  11 => 'fullpath',
+                  12 => 'childs',
+                  13 => 'values',
+                  14 => 'cachetag',
+                  15 => 'cachetags',
+                  16 => 'parent',
+                  17 => 'published',
+                  18 => 'valuefromparent',
+                  19 => 'userpermissions',
+                  20 => 'dependencies',
+                  21 => 'modificationdate',
+                  22 => 'usermodification',
+                  23 => 'byid',
+                  24 => 'bypath',
+                  25 => 'data',
+                  26 => 'versions',
+                  27 => 'properties',
+                  28 => 'permissions',
+                  29 => 'permissionsforuser',
+                  30 => 'childamount',
+                  31 => 'apipluginbroker',
+                  32 => 'resource',
+                  33 => 'parentClass',
+                  34 => 'definition',
+                  35 => 'locked',
+                  36 => 'language',
+                  37 => 'omitmandatorycheck',
+                  38 => 'idpath',
+                  39 => 'object',
+                  40 => 'fieldname',
+                  41 => 'property',
+                  42 => 'parentid',
+                  43 => 'children',
+                  44 => 'scheduledtasks',
+                ),
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' =>
+             'blockedVarsForExport' => 
             array (
             ),
              'icon' => NULL,
              'labelWidth' => 100,
              'labelAlign' => 'left',
           )),
-          3 =>
+          3 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'layout' => '',
@@ -808,9 +1387,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => 'Settings for similarity calculation. These options are optional and need to be explicitly considered by the frontent implementation.&nbsp;',
@@ -828,15 +1407,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\ManyToOneRelation::__set_state(array(
                  'fieldtype' => 'manyToOneRelation',
                  'width' => 500,
@@ -844,16 +1423,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'relationType' => true,
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' =>
+                 'assetTypes' => 
                 array (
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' =>
+                 'documentTypes' => 
                 array (
                 ),
-                 'classes' =>
+                 'classes' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'classes' => 'ProductCategory',
                   ),
@@ -872,11 +1451,59 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' =>
+                 'forbiddenNames' => 
+                array (
+                  0 => 'id',
+                  1 => 'key',
+                  2 => 'path',
+                  3 => 'type',
+                  4 => 'index',
+                  5 => 'classname',
+                  6 => 'creationdate',
+                  7 => 'userowner',
+                  8 => 'value',
+                  9 => 'class',
+                  10 => 'list',
+                  11 => 'fullpath',
+                  12 => 'childs',
+                  13 => 'values',
+                  14 => 'cachetag',
+                  15 => 'cachetags',
+                  16 => 'parent',
+                  17 => 'published',
+                  18 => 'valuefromparent',
+                  19 => 'userpermissions',
+                  20 => 'dependencies',
+                  21 => 'modificationdate',
+                  22 => 'usermodification',
+                  23 => 'byid',
+                  24 => 'bypath',
+                  25 => 'data',
+                  26 => 'versions',
+                  27 => 'properties',
+                  28 => 'permissions',
+                  29 => 'permissionsforuser',
+                  30 => 'childamount',
+                  31 => 'apipluginbroker',
+                  32 => 'resource',
+                  33 => 'parentClass',
+                  34 => 'definition',
+                  35 => 'locked',
+                  36 => 'language',
+                  37 => 'omitmandatorycheck',
+                  38 => 'idpath',
+                  39 => 'object',
+                  40 => 'fieldname',
+                  41 => 'property',
+                  42 => 'parentid',
+                  43 => 'children',
+                  44 => 'scheduledtasks',
+                ),
+                 'blockedVarsForExport' => 
                 array (
                 ),
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'name' => 'Layout',
@@ -890,19 +1517,19 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => '',
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                      'fieldtype' => 'select',
-                     'options' =>
+                     'options' => 
                     array (
-                      0 =>
+                      0 => 
                       array (
                         'key' => 'Yes',
                         'value' => 'true',
                       ),
-                      1 =>
+                      1 => 
                       array (
                         'key' => 'No',
                         'value' => 'false',
@@ -928,15 +1555,63 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                      'defaultValueGenerator' => '',
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                      'fieldtype' => 'fieldcollections',
-                     'allowedTypes' =>
+                     'allowedTypes' => 
                     array (
                       0 => 'SimilarityField',
                     ),
@@ -961,13 +1636,61 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' =>
+                     'forbiddenNames' => 
+                    array (
+                      0 => 'id',
+                      1 => 'key',
+                      2 => 'path',
+                      3 => 'type',
+                      4 => 'index',
+                      5 => 'classname',
+                      6 => 'creationdate',
+                      7 => 'userowner',
+                      8 => 'value',
+                      9 => 'class',
+                      10 => 'list',
+                      11 => 'fullpath',
+                      12 => 'childs',
+                      13 => 'values',
+                      14 => 'cachetag',
+                      15 => 'cachetags',
+                      16 => 'parent',
+                      17 => 'published',
+                      18 => 'valuefromparent',
+                      19 => 'userpermissions',
+                      20 => 'dependencies',
+                      21 => 'modificationdate',
+                      22 => 'usermodification',
+                      23 => 'byid',
+                      24 => 'bypath',
+                      25 => 'data',
+                      26 => 'versions',
+                      27 => 'properties',
+                      28 => 'permissions',
+                      29 => 'permissionsforuser',
+                      30 => 'childamount',
+                      31 => 'apipluginbroker',
+                      32 => 'resource',
+                      33 => 'parentClass',
+                      34 => 'definition',
+                      35 => 'locked',
+                      36 => 'language',
+                      37 => 'omitmandatorycheck',
+                      38 => 'idpath',
+                      39 => 'object',
+                      40 => 'fieldname',
+                      41 => 'property',
+                      42 => 'parentid',
+                      43 => 'children',
+                      44 => 'scheduledtasks',
+                    ),
+                     'blockedVarsForExport' => 
                     array (
                     ),
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' =>
+                 'blockedVarsForExport' => 
                 array (
                 ),
                  'labelWidth' => 100,
@@ -975,7 +1698,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' =>
+             'blockedVarsForExport' => 
             array (
             ),
              'icon' => NULL,
@@ -984,13 +1707,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
           )),
         ),
          'locked' => false,
-         'blockedVarsForExport' =>
+         'blockedVarsForExport' => 
         array (
         ),
       )),
     ),
      'locked' => false,
-     'blockedVarsForExport' =>
+     'blockedVarsForExport' => 
     array (
     ),
      'icon' => NULL,
@@ -1002,14 +1725,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'group' => 'E-Commerce',
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => '',
-   'compositeIndices' =>
+   'previewGeneratorReference' => '',
+   'compositeIndices' => 
   array (
   ),
    'generateTypeDeclarations' => true,
    'showFieldLookup' => false,
-   'propertyVisibility' =>
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'key' => false,
@@ -1018,7 +1742,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => false,
       'creationDate' => false,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'key' => false,
@@ -1030,7 +1754,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
   ),
    'enableGridLocking' => false,
    'dao' => NULL,
-   'blockedVarsForExport' =>
+   'blockedVarsForExport' => 
   array (
   ),
 ));
